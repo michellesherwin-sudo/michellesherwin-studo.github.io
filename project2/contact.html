@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!--
+Michelle Sherwin
+12/1/2025-->
+<html lang="en">
+
+<head>
+
+    <title>Greg's Cat Photography | Home Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="images/pawsicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/paws32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/paws.png">
+    <link rel="icon" sizes="192x192" href="images/paws512.png">
+</head>
+
+<body>
+    <!-- Mobile Nav -->
+    <nav class="mobile-nav">
+        <div id="menu-links">
+            <a href="index.html">Home</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#about me">About Me</a>
+            <a href="#about the company">About the Company</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#faq">FAQs</a>
+            <a href="contact.html">Contact Me</a>
+        </div>
+        <a class="menu-icon" onclick="hamburger()">
+            <div>&#9776;</div>
+        </a>
+    </nav>
+    <header>
+        <h1>Greg's Cat Photography</h1>
+    </header>
+    <nav class="tab-desk">
+        <ul>
+            <li><img src="images/cat logo.png" class="logo" sizes="512x512" alt="logo image of sideview of dog"></li>
+            <li><a href="index.html">Home</a> </li>
+            <li> <a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about me">About Me</a> </li>
+            <li><a href="#about the company">About the Company </a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#faq">FAQs</a></li>
+            <li> <a href="contact.html">Contact Me</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- Hero Image -->
+    <div id="hero" class="tab-desk">
+        <img src="images/cat3.jpg" alt="cat reaching upward">
+    </div>
+    <main>
+        <div class="grid-container">
+            <div><img src="images/cat4.jpg"></div>
+            <div>
+                <h2> Complete this form and I will contact you</h2>
+                <form class="form-grid"><!-- Start Form -->
+                    <fieldset>
+                        <legend>Customer Information</legend>
+                        <label for="fName">First Name:</label>
+                        <input type="text" name="fName" id="fName">
+                        <label for="lName">Last Name:</label>
+                        <input type="text" name="lName" id="lName">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Pet Information</legend>
+                        <label for="pname">Pet Name:</label><input>
+                        <p>I would like photos:</p>
+                        <label for="wcat"><input type="checkbox" name="interest" id="wcatyes" value="With Cat">Of my cat
+                            and I together
+                        </label>
+                        <label for="ocat"><input type="checkbox" name="interest" id="ocatno" value="Just Cat">Of my cat
+                            only
+                        </label>
+                    </fieldset>
+                    <fieldset>
+
+                        <legend>When is the best time to contact you?</legend>
+                        <label for="morning"><input type="radio" id="morning" name="time" value="moring" checked>
+                            Morning</label><br>
+                        <label for="morning"><input type="radio" id="afternoon" name="time" value="afternoon"
+                                checked>Afternoon</label><br>
+                        <label for="evening"></label><input type="radio" id="evening" name="time"
+                            value="evening">Evening</label><br><br>
+                    </fieldset>
+                    <button type="submit" id="submit" value="Submit" class="btn">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="rental">
+            <h3>Session Rates</h3>
+            <table>
+                <tr><!--Row 1-->
+                    <th>Subjects</th>
+                    <th>1 hour</th>
+                    <th>2 hours</th>
+                </tr>
+                <tr><!--Row 2-->
+                    <td>1 Cat</td>
+                    <td>$25</td>
+                    <td>$45</td>
+                </tr>
+                <tr><!--Row 3-->
+                    <td>2+ Cats</td>
+                    <td>$30</td>
+                    <td>$50</td>
+                </tr>
+                <tr><!--Row 4-->
+                    <td>1 Cat+ Owner</td>
+                    <td>$30</td>
+                    <td>$50</td>
+                </tr>
+                <tr><!--Row 5-->
+                    <td>2+ Cats + Owner</td>
+                    <td>$35</td>
+                    <td>$55</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+
+        <p>&copy; Copyright 2025. All Rights Reserved.</p>
+        <p>Designed by: Michelle Sherwin</p>
+        <p class="company">Greg's Cat Photography</p>
+        <a href="https://instagram.com" target="_blank">
+            <img src="images/3721672-instagram_108066.ico">
+        </a>
+
+    </footer>
+</body>
+
+</html>
